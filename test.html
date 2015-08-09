@@ -1,0 +1,58 @@
+<html>
+<head>
+	<style>
+	.Be_my_Foever{
+		background: aqua;
+		}
+		
+	.new{
+		color: green;
+		}
+		
+	div{
+		width: 70px;
+		height: 50px;
+		background-color: aqua;
+		float: left;
+		margin: 5px;
+		}	
+		
+	.foo{
+		float: left;
+		}		
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+			$(document).ready(function(){
+					//$('span.my_new').html('<div>fooo</div>');
+					$('span').removeClass('my_new').addClass('Be_my_Foever New');
+					$('p').last().removeClass().addClass('var');
+					$('p').addClass(function(index, foo){
+						$(this).removeClass(foo);
+						++index;
+						return "class-" + index;
+						});
+					
+					
+						
+					$('div').on('click', function(){
+				$(this).height(15).css({
+					backgroundColor: 'red'      
+					});
+				});	
+				});
+			
+				
+				
+	</script>
+</head>
+<body>
+	<span class="my_new">Hello</span>
+	<p class="foo">foo</p>
+	<p class="bar">bar</p>
+	<div></div>
+	<div class="foo">I'm bind, click on me</div>
+	<span class="bind">Click on me</span>             <!--как прекратить addClass-->
+	
+</body>
+</html>

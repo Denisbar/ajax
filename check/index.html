@@ -1,0 +1,18 @@
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+ $(document).ready(function(){
+ 	$('#email').keyup(function(){
+ 		alert("llll");
+ 	})
+
+ });
+</script>
+<div id="loginForm">
+ <label>Please Login</label><br/>
+ <form id="myForm" action="check.php" method="post">
+ <input name="emailid" id="email" type="text" placeholder="Enter your Email ID"/><br/>
+ <input name="password" id="pass" type="password" placeholder="Enter your password"/><br/>
+ <button id="submit"> Login</button>
+ </form>
+</div>
+<div id="ack"></div>

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<style>
+	#text{
+		
+		}
+	</style>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+			$(document).ready(function(){
+				$('#text').mouseover(function(){
+					$(this).css({'border-color': 'red'});
+					});
+				$('#text').mouseout(function(){
+					$(this).css({'border-color': ''});
+					});	
+				});
+				
+	</script>
+</head>
+<body>
+	
+	<form action="#" method="POST">
+		<input type="text" id="text" name="text">
+		<input type="submit" value="OK" id="ok" >
+	</form>          
+	
+</body>
+</html>
